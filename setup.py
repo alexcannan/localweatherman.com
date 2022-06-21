@@ -12,6 +12,7 @@ setup(
         "loguru",
         "fastapi",
         "gunicorn",
-        "uvicorn[standard]"
+        "uvicorn[standard]",
+        "jinja2"
     ],
 )

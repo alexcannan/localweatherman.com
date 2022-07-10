@@ -24,7 +24,7 @@ async def nwp():
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
-    env = Environment(loader=FileSystemLoader(lwpath))
+    env = Environment(loader=FileSystemLoader(lwpath / "templates"))
     template = env.get_template('home.html')
     return HTMLResponse(template.render())
 
